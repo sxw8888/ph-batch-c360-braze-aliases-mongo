@@ -1,0 +1,20 @@
+{
+    "reporting": {
+        "print": "detail",
+        "dir": "build-output/coverage"
+    },
+    "instrumentation": {
+        "root": "./src/",
+        "excludes": [
+            "vendor/**/*"
+        ]
+    },
+    "check": {
+        "global": {
+            "statements": 0,
+            "lines": 0,
+            "branches": 0,
+            "functions": 0
+        }
+    }
+}
