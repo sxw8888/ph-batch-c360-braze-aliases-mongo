@@ -37,7 +37,7 @@ class brazeAxiosService {
         if (iRetryAttempt < env.retryAttempts) {
           results = await this.upsertUserBatchToBraze(customers, iBatch, iBrazeThread, iRetryAttempt + 1);
         } else {
-          results = await cafService.markFailedUserBatchToBraze(externalIds, iBatch, iBrazeThread, iRetryAttempt);
+          //results = await cafService.markFailedUserBatchToBraze(externalIds, iBatch, iBrazeThread, iRetryAttempt);
         }
         recursiveStack.response.push({
           status: error.response.status,
@@ -55,7 +55,7 @@ class brazeAxiosService {
     } = this.responseFromBRAZE || {};
     if (data !== undefined) recursiveStack.response.push(data);
     if (data !== undefined && data.message === 'success') {
-      results = await cafService.markSuccessUserBatchToBraze(externalIds, iBatch, iBrazeThread);
+      //results = await cafService.markSuccessUserBatchToBraze(externalIds, iBatch, iBrazeThread);
       results.response.forEach(element => recursiveStack.response.push({
         status: element.status,
         message: element.message

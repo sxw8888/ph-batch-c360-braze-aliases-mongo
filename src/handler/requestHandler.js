@@ -70,4 +70,4 @@ async function aliasesPushToBraze(fromDate, toDate) {
   }
   return Promise.resolve('Push to Braze Complete');
 }
-module.exports = aliasesPushToBraze;
+module.exports = {aliasesPushToBraze};
