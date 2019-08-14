@@ -12,7 +12,7 @@ require('app-module-path').addPath(path.join(__dirname, '/src'));
 
 // Add aliases to external_id
 program.command('aliases')
-  .alias('aliases')
+  .alias('al')
   .arguments('[fromDate] [toDate]')
   .description('Add aliases to external_id')
   .action(async (fromDate, toDate) => {
