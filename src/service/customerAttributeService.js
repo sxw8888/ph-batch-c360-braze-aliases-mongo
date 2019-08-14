@@ -18,7 +18,9 @@ class customerAttributeService {
         $gte: fr,
         $lt: td
       }
-    }, ).countDocuments();
+    }, )
+    .limit(10)
+    .countDocuments();
     return this.cafAttribute;
     }
 
@@ -59,7 +61,8 @@ class customerAttributeService {
           // punch_id: '$punch_sys_id',
         },
       },
-    ]);
+    ])
+    .limit(10);
     return this.customerAggregate;
   }
 
