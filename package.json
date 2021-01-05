@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "app-module-path": "^2.2.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bunyan": "^1.8.12",
     "bunyan-prettystream": "^0.1.3",
     "commander": "^2.19.0",
