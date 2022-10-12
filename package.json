@@ -39,7 +39,7 @@
     "istanbul": "^1.0.0-alpha.2",
     "jasmine": "^3.3.1",
     "jasmine-console-reporter": "^3.1.0",
-    "jasmine-reporters": "^2.3.2",
+    "jasmine-reporters": "^2.5.0",
     "proxyquire": "^2.1.0"
   }
 }
